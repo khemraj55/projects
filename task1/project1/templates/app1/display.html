@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>display</title>
+</head>
+<body><center>
+<h1> Details</h1>
+<table border="3">
+    <tr>
+  <th> c_id</th>
+    <th>mobile</th>
+    <th>laptop</th>
+    </tr>
+    {% for i in Category %}
+    <tr>
+       <td>{{i.c_id}}</td>
+         <td>{{i.mobile}}</td>
+         <td>{{i.laptop}}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+    <b> Product</b>
+    <table border="3">
+        <tr>
+            <th> p_id</th>
+             <th> YEAR</th>
+             <th> BRAND</th>
+             <th> MODEL NAME</th>
+        </tr>
+        {% for i in Product %}
+        <tr>
+            <td> {{i.p_id}}</td>
+            <td> {{i.year}}</td>
+            <td> {{i.brand}}</td>
+            <td> {{i.model_name}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+</center>
+</body>
+</html>
